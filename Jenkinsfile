@@ -10,7 +10,7 @@ pipeline {
         stage('Format')
         {
             steps {
-                sh 'python3 -m black ./src/Python'
+                sh 'python3 -m black .'
             }
         }
     }
