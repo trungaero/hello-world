@@ -11,6 +11,7 @@ pipeline {
         {
             steps {
                 sh 'python3 -m black .'
+                sh 'git add . && git commit -C HEAD --amend'
             }
         }
     }
